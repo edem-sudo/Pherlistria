@@ -1,0 +1,67 @@
+body{
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+  margin: 0px;
+  padding: 2rem;
+}
+h1, h2{
+  color: #accaf6;
+}
+div{
+  box-sizing: border-box;
+}
+button, select, label{
+  margin-top: 0.5rem; 
+  margin-bottom: 0.5rem; 
+  font-size: 1rem;
+}
+button{
+  padding: 0.5rem 1rem;
+  margin-left: 0.15rem;
+  margin-right: 0.15rem;
+  cursor: pointer;
+}
+.output{
+  margin-top:0.5rem;
+  margin-bottom:0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #fff;
+}
+.text{
+  white-space: pre-line;
+}
+.highlight{
+  color: #fcfca6;
+  font-weight: bold;
+}
+.paragraph{
+  margin-bottom:0.5rem;
+  margin-top:0.5rem;
+}
+
+
+.Ignisite{
+  color:#E25822;
+}
+.Ig{color:#FF6A2E;} .Fa{color:#E25822;} .Dx{color:#B9441B;}
+
+.Glacite{
+  color:#87CEEB;
+}
+.Gc{color:#A7E4FF;} .St{color:#87CEEB;} .Fg{color:#5FA9C9;}
+
+.Ventusite{
+  color:#4FB6B2;
+}
+.Tp{color:#6FD8D3;} .Ci{color:#4FB6B2;} .Ps{color:#2F7F7C;}
+
+.Fulgurite{
+  color:#C9B6FF;
+}
+.Ms{color:#E1D6FF;} .Ct{color:#C9B6FF;} .Ae{color:#9C86D6;}
+
+.Territe{
+  color:#9A7B4F;
+}
+.Tn{color:#B89A6A;} .Pe{color:#9A7B4F;} .Tr{color:#6F5636;}
