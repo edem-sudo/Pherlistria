@@ -70,6 +70,10 @@ function Output({output, handleTake, handleDiscard}){
       </div>
 
       <div className="paragraph">{compositionText}</div>
+
+      <div className="paragraph">Impurities:{"  "}
+        <span className={`${output.impurity?.symbol ?? ''}`}>{ output.impurity ? `${output.impurity.symbol}` : 'None' }</span>
+      </div>
       
       <div className="paragraph" style={{display: 'flex', alignItems: 'center', gap: '12px', marginTop: '0.5rem'}}>
         <div>
