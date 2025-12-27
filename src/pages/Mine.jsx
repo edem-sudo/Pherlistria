@@ -19,8 +19,6 @@ function Mine({setLog, setInventory}){
     setMessage('인벤토리에 보관했습니다.');
     setOutput(null);
   }
-
-
   function handleDiscard(){
     setMessage('땅바닥에 던져 부셔버렸습니다.');
     setOutput(null);
@@ -28,26 +26,25 @@ function Mine({setLog, setInventory}){
   
   return(<>
     <div>
-      <label>Select Pherlisite Type: </label>
-      <select style={{marginLeft: '0.5rem'}} onChange={e=>{
-        setSelected(e.target.value);
-      }}>
-        <option value="Random">Random</option>
-        <option value="Ignisite">Ignisite</option>
-        <option value="Glacite">Glacite</option>
-        <option value="Ventusite">Ventusite</option>
-        <option value="Fulgurite">Fulgurite</option>
-        <option value="Territe">Territe</option>
-      </select>
+      <label style={{display: 'block'}}>Select Pherlisite Type:
+        <select style={{margin: '0 0 0 0.5rem'}} name="select" onChange={e=>{
+          setSelected(e.target.value);
+        }}>
+          <option value="Random">Random</option>
+          <option value="Ignisite">Ignisite</option>
+          <option value="Glacite">Glacite</option>
+          <option value="Ventusite">Ventusite</option>
+          <option value="Fulgurite">Fulgurite</option>
+          <option value="Territe">Territe</option>
+        </select>
+      </label>
     </div>
     
     <button onClick={()=>generateStone(selected)}>Generate</button>
 
     <h2>Output</h2>
-    { 
-
-      output && <Output output={output} handleTake={handleTake} handleDiscard={handleDiscard} /> 
-    }
+    
+    { output && <Output output={output} handleTake={handleTake} handleDiscard={handleDiscard} /> }
 
     { message && <Message message={message} />}
 

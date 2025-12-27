@@ -11,15 +11,23 @@ h1, h2{
 div{
   box-sizing: border-box;
 }
-button, select, label{
+select, label{
   margin-top: 0.5rem; 
   margin-bottom: 0.5rem; 
   font-size: 1rem;
+  line-height: 1.5;
+  border: none;
+}
+input{
+  border: none;
+}
+label{
+  display: block;
 }
 button{
+  font-size: 1rem;
   padding: 0.5rem 1rem;
-  margin-left: 0.15rem;
-  margin-right: 0.15rem;
+  margin: 0.5rem 0.15rem;
   cursor: pointer;
 }
 ul{
@@ -34,7 +42,6 @@ li{
   margin-top:0.5rem;
   margin-bottom:0.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #fff;
 }
 .text{
   white-space: pre-line;
@@ -46,6 +53,11 @@ li{
 .paragraph{
   margin-bottom:0.5rem;
   margin-top:0.5rem;
+}
+
+#trimInventory{
+  height: 5rem;
+  overflow: auto;
 }
 
 

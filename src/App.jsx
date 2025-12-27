@@ -21,10 +21,10 @@ function App(){
       <button onClick={()=>{setTab('trim')}}>Trim</button>
     </div>
 
-    { tab === 'mine' && <Mine log={log} setLog={setLog} inventory={inventory} setInventory={setInventory} /> }
-    { tab === 'observatory' && <Observatory /> }
+    { tab === 'mine' && <Mine log={log} setLog={setLog} setInventory={setInventory} /> }
+    { tab === 'observatory' && <Observatory setLog={setLog} setInventory={setInventory}/> }
     { tab === 'inventory' && <Inventory inventory={inventory} setInventory={setInventory} /> }
-    { tab === 'trim' && <Trim /> }
+    { tab === 'trim' && <Trim inventory={inventory} setInventory={setInventory} /> }
 
     <h2>Generation Log</h2>
 

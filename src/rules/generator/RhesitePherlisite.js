@@ -7,10 +7,6 @@ import { random } from '../../utils/random.js';
 export class Rhesite_Pherlisite{ // elementArray = [lum%, ten%, cos%]; 더해서 100
   constructor(elementArray){
 
-    if(!elementArray){
-      elementArray = this.#rollRatio3UniqueMin(random.uniformFn(1));
-    }
-
     this.id = Date.now();
     this.rarity = 'Rhesite';
 
